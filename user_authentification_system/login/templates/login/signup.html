@@ -13,18 +13,23 @@
                 <legend>Create an account</legend>
                 <div class="form_input">
                     {{ form.username }}
+                    <p> {{form.username.errors}} </p>
                 </div>
                 <div class="form_input">
                     {{ form.phone_number }}
+                    <p> {{form.phone_number.errors}} </p>                   
                 </div>
                 <div class="form_input">
                     {{ form.email }}
+                    <p> {{form.email.errors}} </p>
                 </div>
                 <div class="form_input">
                     {{ form.password1 }}
+                    <p> {{form.password1.errors}} </p>
                 </div>
                 <div class="form_input">
                     {{ form.password2 }}
+                    <p> {{form.password2.errors}} </p>
                 </div>
                 <div class="form_btn_submit">
                     <button type="submit">Log Up</button>
