@@ -23,4 +23,6 @@ urlpatterns = [
     # Home page path
     path('home/', views.home_page, name='home-page'),
     path('', views.home_page, name='home-page'),
+    # sign up page path
+    path('signup/', views.signup_view, name='sign-up'),
 ]
