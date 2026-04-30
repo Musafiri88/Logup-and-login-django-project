@@ -1,1 +1,46 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="" method="post" novalidate>
+            {% csrf_token %}
+            <div class="form_input_block">
+                <legend>Create an account</legend>
+                <div class="form_input">
+                    {{ form.username }}
+                </div>
+                <div class="form_input">
+                    {{ form.phone_number }}
+                </div>
+                <div class="form_input">
+                    {{ form.email }}
+                </div>
+                <div class="form_input">
+                    {{ form.password1 }}
+                </div>
+                <div class="form_input">
+                    {{ form.password2 }}
+                </div>
+                <div class="form_btn_submit">
+                    <button type="submit">Log Up</button>
+                </div>
+            </div>
+    
+            <div class="login_form_text">
+                <h1>Hello, Friend</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Consequuntur odit quas rem nobis dolorum corrupti vero sequi quis 
+                    dolorem repellendus, facilis, hic, 
+                    ex perspiciatis officia ipsam laborum quaerat repudiandae magnam.
+                </p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

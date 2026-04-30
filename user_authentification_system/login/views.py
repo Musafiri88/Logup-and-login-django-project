@@ -8,7 +8,7 @@ def home_page(request):
 
 
 def  signup_view(request):
-    ''' Sig up function view '''
+    ''' Sign up function view '''
     if request.method == 'POST':
         form = SignUpForm(request.POST)
         if form.is_valid():
