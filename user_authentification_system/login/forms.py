@@ -12,3 +12,22 @@ class SignUpForm(UserCreationForm):
         ''' class Meta '''
         model = User
         fields = ['username', 'email', 'phone_number', 'password1', 'password2']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.fields['username'].widget.attrs.update({
+            'placeholder': 'Username'
+        })      
+        self.fields['phone_number'].widget.attrs.update({
+            'placeholder': '+257 XX XX XX XX'
+        })
+        self.fields['email'].widget.attrs.update({
+            'placeholder': 'account@xyz.com'
+        })
+        self.fields['password1'].widget.attrs.update({
+            'placeholder': 'Password'
+        })      
+        self.fields['password2'].widget.attrs.update({
+            'placeholder': 'Confirm your password'
+        })
